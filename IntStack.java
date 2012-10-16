@@ -42,4 +42,18 @@ class IntStack
 
 	st = newArray;
     }
+
+
+    /*
+     * Size for intstack
+     * Charlie Forster
+     * This is O(C)
+     */
+    int size()
+    {
+	return top;
+    }
+
+
+
 }
