@@ -36,13 +36,13 @@ class IntStack
     {
 	int[] newArray = new int[st.length*2];
 
-	for(int i =0; i<st.length; i++){
+	for(int i =0; i<st.length; i++)
+	{
 	    newArray[i] = st[i];
 	}
 
 	st = newArray;
     }
-
 
     /*
      * Size for intstack
@@ -55,5 +55,30 @@ class IntStack
     }
 
 
+    // This function pops a certain number of places
+    // Author: Jetta Garbasz
+    // Variables: number - number of positions to pop
+    // int array list - list of popped items
+
+    int [] pop (int number)
+    {
+	int[] list = new int [number];
+	  
+	if(number > top || number < 0) // if the user is asking to pop more elements than are in the stack or a negative number of elements
+	    {
+       		list[0] = -1;
+	    }
+
+	else //the user is asking for a valid number of pops
+	{
+	    for ( int i = 0; i < number; i++)
+	    {
+		list [top + i] = st[top + i];
+	    }
+	}
+
+	top = top - number; //reassign the new top
+	return list;
+    }
 
 }
