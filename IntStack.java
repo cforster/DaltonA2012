@@ -31,6 +31,16 @@ class IntStack
 	if(isEmpty()) return -1;
 	return st[top-1];
     }
+    //This function "peeks" to a depth specified by the user, i.e. (peek(5))
+    //Author: Morris Reeves
+    //Variables: depth - number of spaces from the top
+    //returns position at top-depth
+
+    int peek(int depth)
+    {
+        if(depth>top) return -1;
+	return st[top-depth];
+    }
 
     void resize()
     {

@@ -11,6 +11,11 @@ class IntStackTest
        	System.out.println(is.pop());
 	System.out.println(is.peek());
 	System.out.println(is.isEmpty());
+
+
+	//testing for peek depth
+	System.out.println(is.peek(2));
+	System.out.println(is.peek(5));
 	
     }
 }
