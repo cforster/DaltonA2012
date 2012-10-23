@@ -88,4 +88,17 @@ class IntStack
 	return list;
     }
 
+    //this is a multi push--push all items in the arrray
+    //sam and col
+    void push(int[] nums)
+    {
+	if(size() < nums.length) return -1;
+	for(int i; i<nums.length ; i++)
+	    {
+		push(nums[i]);
+	    }
+    }
+//exception: stack is less than array length
+
+
 }
