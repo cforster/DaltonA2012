@@ -92,8 +92,8 @@ class IntStack
     //sam and col
     void push(int[] nums)
     {
-	if(size() < nums.length) return -1;
-	for(int i; i<nums.length ; i++)
+	if(size() < nums.length) return;
+	for(int i=0; i<nums.length ; i++)
 	    {
 		push(nums[i]);
 	    }
