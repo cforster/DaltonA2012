@@ -28,6 +28,37 @@ class IntQueue {
     {
 	return back==front;
     }
+    
+    //Yuri and Jetta
+    
+    //clear the array: this resets the front and back counters to 0
+    void clear (int [] q)
+    {
+        front = 0;
+        back = 0;
+        
+    }
+    
+    //return the size of the queue: this takes the size of the array and sets it as the size of the queue
+    int sizeQueue (int [] q)
+    {
+        int size = q.size;
+        
+        return size;
+    }
+    
+    //return the entire queue: this returns the entire array by printing an int array display
+    int [] getAll (int [] q)
+    {
+        int [] display = new Int [size];
+        
+        for( i = 0; i < q.size; i++)
+        {
+            display[i] = q[i];
+        }
+        
+        return display;
+    }
 
     void resize()
     {
