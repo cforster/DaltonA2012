@@ -43,6 +43,13 @@ class IntStack
 
 	st = newArray;
     }
+    
+    void dumpall()
+    {
+        top = 0;
+        
+        
+    }
 
     /*
      * Size for intstack
