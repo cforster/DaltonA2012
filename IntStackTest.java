@@ -16,6 +16,10 @@ class IntStackTest
 	//testing for peek depth
 	System.out.println(is.peek(2));
 	System.out.println(is.peek(5));
-	
+
+	//testing for flip
+	is.flip();
+	System.out.println(is.peek()); //should be 4
+		 
     }
 }

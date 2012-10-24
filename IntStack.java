@@ -111,4 +111,20 @@ class IntStack
 //exception: stack is less than array length
 
 
+    /*
+      flip()
+      Authors Forster & Durkin
+      makes the top the bottom, and bottomr the top
+     */
+    void flip()
+    {
+	int[] flipped = new int[st.length];
+
+	for(int i=0; i!=top; i++) {
+	    flipped[i]=st[top-i-1];
+	}
+
+	st=flipped;
+    }
+
 }
