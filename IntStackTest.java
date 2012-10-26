@@ -20,6 +20,12 @@ class IntStackTest
 	//testing for flip
 	is.flip();
 	System.out.println(is.peek()); //should be 4
-		 
-    }
+
+
+	//testing for pushpop
+	is.push(9);
+	int popped = is.pushpop(4);
+	System.out.println(popped);
+	System.out.println(is.peek());
+   }
 }
