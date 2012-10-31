@@ -82,5 +82,16 @@ class IntQueue {
 
 	return getmult;
     }
+    void toStack()
+    {
+        int Stack s;
+        int Queue q;
+        int round = 0;
+        while(round<s.size)
+	    {
+            s.push(q.peek);
+            q.put(q.get());
+	    }
+    }
 
 }
