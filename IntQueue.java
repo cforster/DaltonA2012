@@ -28,7 +28,17 @@ class IntQueue {
     {
 	return back==front;
     }
-    
+   
+    //Morris
+
+    int bump(int depth)
+    {
+	int x; //temporary variable to store value of depth
+	x = q[depth];
+	q[depth] = q[depth-1];
+	q[depth-1] = x;
+    }
+
     //Yuri and Jetta
     
     //clear the array: this resets the front and back counters to 0
