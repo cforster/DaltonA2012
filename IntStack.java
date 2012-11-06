@@ -108,7 +108,7 @@ class IntStack
 		push(nums[i]);
 	    }
     }
-//exception: stack is less than array length
+    //exception: stack is less than array length
 
 
     /*
