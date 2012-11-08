@@ -75,4 +75,33 @@ class IntQueue {
 	//currently unimplemented
     }
 
+    //get(3)
+
+    int[] get(int x)
+    {
+	//new array
+    	int[] getmult = new int[x];
+	
+	//repeat x times:
+	for(int i =0; i<x; i++)
+	    {
+		//get an item
+		//put it into the array
+		getmult[i] = get();
+	    }
+
+	return getmult;
+    }
+    void toStack()
+    {
+        int Stack s;
+        int Queue q;
+        int round = 0;
+        while(round<s.size)
+	    {
+            s.push(q.peek);
+            q.put(q.get());
+	    }
+    }
+
 }

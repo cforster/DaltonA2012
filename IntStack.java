@@ -108,13 +108,13 @@ class IntStack
 		push(nums[i]);
 	    }
     }
-//exception: stack is less than array length
+    //exception: stack is less than array length
 
 
     /*
       flip()
       Authors Forster & Durkin
-      makes the top the bottom, and bottomr the top
+      makes the top the bottom, and bottom the top
      */
     void flip()
     {
@@ -124,7 +124,25 @@ class IntStack
 	    flipped[i]=st[top-i-1];
 	}
 
+
 	st=flipped;
     }
+
+//PushPop
+//Jared Mandelbaum
+//Steven Barker
+
+    int pushpop(int x)
+    {
+	//pops the top item
+	int retval = pop();
+
+	//pushes x in
+	push(x);
+
+	return retval;
+    }
+    
+
 
 }
