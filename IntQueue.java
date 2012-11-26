@@ -90,7 +90,9 @@ class IntQueue {
 
 	return getmult;
     }
-    void toStack()
+  
+    //toStack : Sam and Colette  
+  void toStack()
     {
         int Stack s;
         int Queue q;
