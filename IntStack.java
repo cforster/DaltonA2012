@@ -8,8 +8,7 @@ class IntStack
     {
 	st = new int[size];
     }
-    
-    
+
     int pop()
     {
 	if(isEmpty()) return -1;
@@ -43,22 +42,6 @@ class IntStack
 	return st[top-depth];
     }
 
-    
-    int average()
-    {
-        //go through array and find values
-        //add values together and divide by the amount of values
-        //return new value
-        
-        int sum = 0;
-        for(int i = 0; i<top.length; i ++){
-            sum+ = st[i];
-        }
-        return sum/top;
-        }
-    }
-    
-    
     void resize()
     {
 	int[] newArray = new int[st.length*2];
@@ -69,6 +52,7 @@ class IntStack
 	}
 
 	st = newArray;
+    }
     
     void dumpall()
     {
