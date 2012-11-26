@@ -46,14 +46,12 @@ class IntQueue {
     {
         front = 0;
         back = 0;
-        
     }
     
     //return the size of the queue: this takes the size of the array and sets it as the size of the queue
     int sizeQueue (int [] q)
     {
         int size = q.size;
-        
         return size;
     }
     
