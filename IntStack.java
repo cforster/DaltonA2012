@@ -143,6 +143,23 @@ class IntStack
 	return retval;
     }
     
+    //Tyler and Tiluna
+    //average function:
+    
+    int average()
+    {
+        //go through array and find values
+        //add values together and divide by the amount of values
+        //return new value
+        
+        int sum = 0;
+        for(int i = 0; i<top.length; i ++){
+              sum+ = st[i];
+            }
+        return sum/top;
+    }
+    
+    
 
 
 }
