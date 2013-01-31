@@ -10,6 +10,17 @@ class FreqDict {
 	
 	for(String word : words) {
 	    if(word.length()<=0) continue;
+	   
+
+	    if(dict.containsKey(word)) 
+		{
+		    dict.put(word, dict.get(word)+1);
+		}
+		else
+		{
+		    dict.put(word, 1);
+		}
+		    
 
 	    //check to see if the word is in the dict
 	         //add one to the value
@@ -18,6 +29,9 @@ class FreqDict {
 	}
 
 
+	for(Map.Entry e : dict.entrySet()) {
+	    System.out.println(e.getKey() + ":" + e.getValue());
+	}
 	//for every key in the dict
 	     //print the key and the value
 
