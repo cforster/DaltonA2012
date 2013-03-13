@@ -110,4 +110,5 @@ class IntQueue {
 	}
 
 
+    //get different item from front of queue
 }
