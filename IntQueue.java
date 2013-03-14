@@ -91,17 +91,23 @@ class IntQueue {
 	return getmult;
     }
   
-    //toStack : Sam and Colette  
-  void toStack()
-    {
-        int Stack s;
-        int Queue q;
-        int round = 0;
-        while(round<s.size)
-	    {
-            s.push(q.peek);
-            q.put(q.get());
-	    }
-    }
+	//toStack : Sam and Colette
+	IntStack toStack()
+	{
+		IntStack s = new IntStack(q.length);
+		int qelement = get();
+        
+		System.out.println(front + " " + back);
+        
+		while(qelement != -1)
+		{
+			s.push(qelement);
+			qelement = get();
+		}
+		
+		
+		return s;
+	}
+
 
 }

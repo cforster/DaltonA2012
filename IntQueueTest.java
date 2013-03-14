@@ -13,6 +13,26 @@ class IntQueueTest {
         
         System.out.println(iq.size);
         System.out.println(iq.GetAll);
-	System.out.println(iq.clear);   
+	System.out.println(iq.clear); 
+
+        //Sam and Colette testing
+		System.out.println("size: "+ iq.sizeQueue());
+		
+        //		System.out.println("queue:");
+        //		while(!iq.isEmpty())
+        //		{
+        //			System.out.println(iq.get());
+        //		}
+		
+		IntStack is = iq.toStack();
+		
+		
+		
+		System.out.println("stack:");
+		while(!is.isEmpty())
+		{
+			System.out.println(is.pop());
+		} 
+	
     }
 }
