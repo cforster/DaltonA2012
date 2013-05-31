@@ -110,5 +110,14 @@ class IntQueue {
 	}
 
 
+    //putget Steven Barker and Jared Mandelbaum
+    //put item in back of queue
     //get different item from front of queue
+    
+ 	int putget(int i)
+	{
+		put(i);
+		return get();
+	}
+
 }
